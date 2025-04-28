@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Deals - CRISPY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="deals.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">CRISPY</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="deals.html" class="active">Deals</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-basket"></i> <span id="cart-count">0</span></a>
+                <button class="btn order-btn">Order Now</button>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Deals Hero Section -->
+    <section class="deals-hero">
+        <div class="deals-hero-content">
+            <h1 class="animate__animated animate__fadeInDown">Special Deals</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">Enjoy our best offers and combos</p>
+        </div>
+    </section>
+
+    <!-- Daily Deals Section -->
+    <section class="daily-deals">
+        <div class="container">
+            <h2 class="section-title">Today's Special Offers</h2>
+            <div class="deals-grid">
+                <!-- Deal 1 -->
+                <div class="deal-card">
+                    <div class="deal-badge">Limited Time</div>
+                    <img src="images/01.jpg" alt="Family Feast Deal">
+                    <div class="deal-content">
+                        <h3>Family Feast</h3>
+                        <p class="deal-desc">12 pieces of chicken with 4 sides and drinks</p>
+                        <div class="deal-price">
+                            <span class="original-price">₹1299</span>
+                            <span class="discounted-price">₹999</span>
+                            <span class="discount-percent">23% OFF</span>
+                        </div>
+                        <button class="btn add-deal-to-cart" data-deal-id="deal1">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Deal 2 -->
+                <div class="deal-card">
+                    <div class="deal-badge">Popular</div>
+                    <img src="images/02.webp" alt="Bucket Combo">
+                    <div class="deal-content">
+                        <h3>Bucket Combo</h3>
+                        <p class="deal-desc">8 pieces chicken with 2 large sides</p>
+                        <div class="deal-price">
+                            <span class="original-price">₹799</span>
+                            <span class="discounted-price">₹649</span>
+                            <span class="discount-percent">19% OFF</span>
+                        </div>
+                        <button class="btn add-deal-to-cart" data-deal-id="deal2">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Deal 3 -->
+                <div class="deal-card">
+                    <div class="deal-badge">New</div>
+                    <img src="images/03.jpg" alt="Lunch Special">
+                    <div class="deal-content">
+                        <h3>Lunch Special</h3>
+                        <p class="deal-desc">4 pieces chicken with rice and drink</p>
+                        <div class="deal-price">
+                            <span class="original-price">₹499</span>
+                            <span class="discounted-price">₹399</span>
+                            <span class="discount-percent">20% OFF</span>
+                        </div>
+                        <button class="btn add-deal-to-cart" data-deal-id="deal3">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Deal 4 -->
+                <div class="deal-card">
+                    <div class="deal-badge">Weekend Special</div>
+                    <img src="images/04.jpg" alt="Party Pack">
+                    <div class="deal-content">
+                        <h3>Party Pack</h3>
+                        <p class="deal-desc">15 pieces chicken with 5 sides</p>
+                        <div class="deal-price">
+                            <span class="original-price">₹1599</span>
+                            <span class="discounted-price">₹1299</span>
+                            <span class="discount-percent">19% OFF</span>
+                        </div>
+                        <button class="btn add-deal-to-cart" data-deal-id="deal4">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Deal 5 -->
+                <div class="deal-card">
+                    <div class="deal-badge">Bestseller</div>
+                    <img src="images/05.jpg" alt="Burger Combo">
+                    <div class="deal-content">
+                        <h3>Burger Combo</h3>
+                        <p class="deal-desc">2 Zinger Burgers with fries and drinks</p>
+                        <div class="deal-price">
+                            <span class="original-price">₹398</span>
+                            <span class="discounted-price">₹299</span>
+                            <span class="discount-percent">25% OFF</span>
+                        </div>
+                        <button class="btn add-deal-to-cart" data-deal-id="deal5">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Deal 6 -->
+                <div class="deal-card">
+                    <div class="deal-badge">Value Deal</div>
+                    <img src="images/06.jpg" alt="Snack Attack">
+                    <div class="deal-content">
+                        <h3>Snack Attack</h3>
+                        <p class="deal-desc">Popcorn, nuggets, and wings combo</p>
+                        <div class="deal-price">
+                            <span class="original-price">₹599</span>
+                            <span class="discounted-price">₹449</span>
+                            <span class="discount-percent">25% OFF</span>
+                        </div>
+                        <button class="btn add-deal-to-cart" data-deal-id="deal6">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combo Meals Section -->
+    <section class="combo-meals">
+        <div class="container">
+            <h2 class="section-title">Combo Meals</h2>
+            <div class="combos-grid">
+                <!-- Combo 1 -->
+                <div class="combo-card">
+                    <img src="images/07.jpg" alt="Chicken & Rice Combo">
+                    <div class="combo-content">
+                        <h3>Chicken & Rice Combo</h3>
+                        <p class="combo-desc">2 pieces chicken with rice and drink</p>
+                        <div class="combo-price">₹249</div>
+                        <button class="btn add-combo-to-cart" data-combo-id="combo1">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Combo 2 -->
+                <div class="combo-card">
+                    <img src="images/08.jpg" alt="Burger Meal">
+                    <div class="combo-content">
+                        <h3>Burger Meal</h3>
+                        <p class="combo-desc">Zinger Burger with fries and drink</p>
+                        <div class="combo-price">₹199</div>
+                        <button class="btn add-combo-to-cart" data-combo-id="combo2">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Combo 3 -->
+                <div class="combo-card">
+                    <img src="images/09.webp" alt="Bucket Meal">
+                    <div class="combo-content">
+                        <h3>Bucket Meal</h3>
+                        <p class="combo-desc">5 pieces chicken with 2 sides</p>
+                        <div class="combo-price">₹499</div>
+                        <button class="btn add-combo-to-cart" data-combo-id="combo3">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Combo 4 -->
+                <div class="combo-card">
+                    <img src="images/10.webp" alt="Snack Combo">
+                    <div class="combo-content">
+                        <h3>Snack Combo</h3>
+                        <p class="combo-desc">Popcorn, nuggets with dips</p>
+                        <div class="combo-price">₹299</div>
+                        <button class="btn add-combo-to-cart" data-combo-id="combo4">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Happy Hour Section -->
+    <section class="happy-hour">
+        <div class="container">
+            <div class="happy-hour-content">
+                <div class="happy-hour-text">
+                    <h2>Happy Hour</h2>
+                    <p class="happy-hour-time">4PM - 7PM Daily</p>
+                    <p class="happy-hour-offer">20% OFF on all snacks and beverages</p>
+                    <button class="btn btn-outline">View Menu</button>
+                </div>
+                <div class="happy-hour-image">
+                    <img src="images/offer.jpg" alt="Happy Hour">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CRISPY</h3>
+                <p>The best fried chicken in town since 2020</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                <p><i class="fas fa-envelope"></i> info@crispy.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CRISPY Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="deals.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

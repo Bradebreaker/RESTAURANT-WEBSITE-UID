@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - CRISPY Fried Chicken</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">CRISPY</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-basket"></i> <span id="cart-count">0</span></a>
+                <button class="btn order-btn">Order Now</button>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Menu Hero Section -->
+    <section class="menu-hero">
+        <div class="menu-hero-content">
+            <h1 class="animate__animated animate__fadeInDown">Our Delicious Menu</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">Choose from our wide variety of crispy chicken delights</p>
+        </div>
+    </section>
+
+    <!-- Menu Categories Navigation -->
+    <section class="menu-categories">
+        <div class="category-tabs">
+            <button class="category-tab active" data-category="all">All Items</button>
+        </div>
+    </section>
+
+    <!-- Menu Items Grid -->
+    <section class="menu-items">
+        <div class="container">
+            <!-- Buckets Category (15+ items) -->
+            <div class="menu-category" id="buckets">
+                <h2 class="category-title">Chicken Buckets</h2>
+                <div class="items-grid">
+                    <!-- Item 1-15 -->
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/6.webp" alt="5 Pcs Chicken Bucket">
+                            <div class="item-badge">Bestseller</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>5 Pcs Chicken Bucket</h3>
+                            <p class="item-desc">5 pieces of our signature crispy chicken</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹399</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/7.webp" alt="8 Pcs Chicken Bucket">
+                            <div class="item-badge">Popular</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>8 Pcs Chicken Bucket</h3>
+                            <p class="item-desc">8 pieces of our signature crispy chicken</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹599</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/8.webp" alt="Family Feast Bucket">
+                        </div>
+                        <div class="item-details">
+                            <h3>Family Feast Bucket</h3>
+                            <p class="item-desc">12 pieces chicken with 4 sides & drinks</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹999</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/9.webp" alt="Hot & Crispy Bucket">
+                        </div>
+                        <div class="item-details">
+                            <h3>Hot & Crispy Bucket</h3>
+                            <p class="item-desc">6 pieces of our spicy crispy chicken</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹499</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/10.webp" alt="Party Bucket">
+                            <div class="item-badge">New</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Party Bucket</h3>
+                            <p class="item-desc">15 pieces chicken with 5 sides</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹1299</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Add 10 more bucket items following same pattern -->
+                    <!-- Item 6-15 -->
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/11.jpg" alt="Snacker Bucket">
+                        </div>
+                        <div class="item-details">
+                            <h3>Snacker Bucket</h3>
+                            <p class="item-desc">4 pieces chicken with 2 dips</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹349</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/12.jpg" alt="Boneless Bucket">
+                            <div class="item-badge">Trending</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Boneless Bucket</h3>
+                            <p class="item-desc">10 pieces boneless chicken</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹699</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/13.jpg" alt="Wings Bucket">
+                        </div>
+                        <div class="item-details">
+                            <h3>Wings Bucket</h3>
+                            <p class="item-desc">12 pieces chicken wings</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹449</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/14.jpg" alt="Leg Piece Bucket">
+                        </div>
+                        <div class="item-details">
+                            <h3>Leg Piece Bucket</h3>
+                            <p class="item-desc">6 juicy leg pieces</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹499</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/15.webp" alt="Combo Bucket">
+                            <div class="item-badge">Value</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Combo Bucket</h3>
+                            <p class="item-desc">8 pieces with 2 large sides</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹799</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/16.webp" alt="Spicy Bucket">
+                        </div>
+                        <div class="item-details">
+                            <h3>Spicy Bucket</h3>
+                            <p class="item-desc">6 pieces extra spicy chicken</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹549</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/17.webp" alt="Mega Bucket">
+                        </div>
+                        <div class="item-details">
+                            <h3>Mega Bucket</h3>
+                            <p class="item-desc">20 pieces for large gatherings</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹1599</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/18.webp" alt="Lunch Bucket">
+                        </div>
+                        <div class="item-details">
+                            <h3>Lunch Bucket</h3>
+                            <p class="item-desc">4 pieces with rice and drink</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹399</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/19.webp" alt="Dinner Bucket">
+                        </div>
+                        <div class="item-details">
+                            <h3>Dinner Bucket</h3>
+                            <p class="item-desc">6 pieces with 2 sides</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹699</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="buckets">
+                        <div class="item-image">
+                            <img src="images/20.webp" alt="Value Bucket">
+                            <div class="item-badge">Offer</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Value Bucket</h3>
+                            <p class="item-desc">10 pieces at special price</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹899</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Burgers Category (15+ items) -->
+            <div class="menu-category" id="burgers">
+                <h2 class="category-title">Burgers</h2>
+                <div class="items-grid">
+                    <!-- Item 1-15 -->
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/21.jpg" alt="Zinger Burger">
+                            <div class="item-badge">Bestseller</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Zinger Burger</h3>
+                            <p class="item-desc">Spicy crispy chicken patty with fresh lettuce and mayo</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹149</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/22.jpg" alt="Chicken Cheese Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Chicken Cheese Burger</h3>
+                            <p class="item-desc">Crispy chicken with melted cheese and veggies</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹129</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/23.webp" alt="Double Chicken Burger">
+                            <div class="item-badge">New</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Double Chicken Burger</h3>
+                            <p class="item-desc">Two crispy chicken patties with special sauce</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹199</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/24.webp" alt="Spicy Chicken Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Spicy Chicken Burger</h3>
+                            <p class="item-desc">Extra spicy chicken patty with jalapeños</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹159</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/25.webp" alt="BBQ Chicken Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>BBQ Chicken Burger</h3>
+                            <p class="item-desc">Grilled chicken with BBQ sauce</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹169</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Add 10 more burger items following same pattern -->
+                    <!-- Item 6-15 -->
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/26.webp" alt="Crispy Chicken Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Crispy Chicken Burger</h3>
+                            <p class="item-desc">Classic crispy chicken burger</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹119</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/27.webp" alt="Zinger Cheese Burger">
+                            <div class="item-badge">Popular</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Zinger Cheese Burger</h3>
+                            <p class="item-desc">Zinger with extra cheese</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹179</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/28.webp" alt="Chicken Fillet Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Chicken Fillet Burger</h3>
+                            <p class="item-desc">Juicy chicken fillet with special sauce</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹139</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/29.webp" alt="Tower Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Tower Burger</h3>
+                            <p class="item-desc">Double patty with bacon and cheese</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹249</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/30.webp" alt="Spicy Zinger Burger">
+                            <div class="item-badge">Hot</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Spicy Zinger Burger</h3>
+                            <p class="item-desc">Extra spicy version of our zinger</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹169</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/31.webp" alt="Chicken Mayo Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Chicken Mayo Burger</h3>
+                            <p class="item-desc">Chicken with extra mayo dressing</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹129</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/32.webp" alt="Crispy Veg Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Crispy Veg Burger</h3>
+                            <p class="item-desc">Vegetarian option with crispy patty</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹99</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/33.webp" alt="Chicken Club Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Chicken Club Burger</h3>
+                            <p class="item-desc">Chicken with bacon and cheese</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹189</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/34.webp" alt="Fiery Chicken Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Fiery Chicken Burger</h3>
+                            <p class="item-desc">Super spicy chicken with ghost pepper sauce</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹179</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="burgers">
+                        <div class="item-image">
+                            <img src="images/35.webp" alt="Deluxe Chicken Burger">
+                            <div class="item-badge">Premium</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Deluxe Chicken Burger</h3>
+                            <p class="item-desc">Gourmet chicken burger with special ingredients</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹229</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Biryanis Category (15+ items) -->
+            <div class="menu-category" id="biryanis">
+                <h2 class="category-title">Biryanis</h2>
+                <div class="items-grid">
+                    <!-- Item 1-15 -->
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/36.webp" alt="Chicken Biryani">
+                            <div class="item-badge">Bestseller</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Chicken Biryani</h3>
+                            <p class="item-desc">Fragrant basmati rice with chicken pieces</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹199</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/38.webp" alt="Hyderabadi Biryani">
+                        </div>
+                        <div class="item-details">
+                            <h3>Hyderabadi Biryani</h3>
+                            <p class="item-desc">Authentic Hyderabadi style biryani</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹249</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/39.webp" alt="Spicy Chicken Biryani">
+                            <div class="item-badge">Hot</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Spicy Chicken Biryani</h3>
+                            <p class="item-desc">Extra spicy version of our chicken biryani</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹219</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/40.webp" alt="Family Pack Biryani">
+                        </div>
+                        <div class="item-details">
+                            <h3>Family Pack Biryani</h3>
+                            <p class="item-desc">Large portion for 4 people</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹499</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/41.webp" alt="Egg Biryani">
+                        </div>
+                        <div class="item-details">
+                            <h3>Egg Biryani</h3>
+                            <p class="item-desc">Flavorful biryani with boiled eggs</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹179</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Add 10 more biryani items following same pattern -->
+                    <!-- Item 6-15 -->
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/42.jpg" alt="Mughlai Biryani">
+                        </div>
+                        <div class="item-details">
+                            <h3>Mughlai Biryani</h3>
+                            <p class="item-desc">Rich and creamy Mughlai style biryani</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹269</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/43.jpg" alt="Dum Biryani">
+                            <div class="item-badge">Special</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Dum Biryani</h3>
+                            <p class="item-desc">Slow-cooked dum style biryani</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹299</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/44.jpeg" alt="Chicken Tikka Biryani">
+                        </div>
+                        <div class="item-details">
+                            <h3>Chicken Tikka Biryani</h3>
+                            <p class="item-desc">Biryani with tikka marinated chicken</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹279</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/45.jpeg" alt="Veg Biryani">
+                        </div>
+                        <div class="item-details">
+                            <h3>Veg Biryani</h3>
+                            <p class="item-desc">Vegetarian version of our biryani</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹159</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/48.jpg" alt="Paneer Biryani">
+                            <div class="item-badge">Veg</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Paneer Biryani</h3>
+                            <p class="item-desc">Biryani with soft paneer cubes</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹199</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/47.jpg" alt="Kolkata Biryani">
+                        </div>
+                        <div class="item-details">
+                            <h3>Kolkata Biryani</h3>
+                            <p class="item-desc">Light and fragrant Kolkata style biryani</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹229</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/48.jpg" alt="Lucknowi Biryani">
+                        </div>
+                        <div class="item-details">
+                            <h3>Lucknowi Biryani</h3>
+                            <p class="item-desc">Awadhi style delicate biryani</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹259</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/49.jpg" alt="Malabar Biryani">
+                        </div>
+                        <div class="item-details">
+                            <h3>Malabar Biryani</h3>
+                            <p class="item-desc">Kerala style biryani with mild spices</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹239</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/50.jpg" alt="Sindhi Biryani">
+                        </div>
+                        <div class="item-details">
+                            <h3>Sindhi Biryani</h3>
+                            <p class="item-desc">Spicy Sindhi style biryani with potatoes</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹249</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="biryanis">
+                        <div class="item-image">
+                            <img src="images/51.jpg" alt="Thalassery Biryani">
+                            <div class="item-badge">Special</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Thalassery Biryani</h3>
+                            <p class="item-desc">Kerala's famous small grain biryani</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹279</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Snacks Category (15+ items) -->
+            <div class="menu-category" id="snacks">
+                <h2 class="category-title">Snacks</h2>
+                <div class="items-grid">
+                    <!-- Item 1-15 -->
+                    <div class="menu-item" data-category="snacks">
+                        <div class="item-image">
+                            <img src="images/58.webp" alt="Chicken Popcorn">
+                            <div class="item-badge">Bestseller</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Chicken Popcorn</h3>
+                            <p class="item-desc">Bite-sized crispy chicken pieces</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹129</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="snacks">
+                        <div class="item-image">
+                            <img src="images/52.webp" alt="Chicken Wings">
+                        </div>
+                        <div class="item-details">
+                            <h3>Chicken Wings</h3>
+                            <p class="item-desc">6 pieces of juicy chicken wings</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹179</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="snacks">
+                        <div class="item-image">
+                            <img src="images/53.webp" alt="Chicken Strips">
+                            <div class="item-badge">New</div>
+                        </div>
+                        <div class="item-details">
+                            <h3>Chicken Strips</h3>
+                            <p class="item-desc">Tender chicken strips with dip</p>
+                            <div class="item-footer">
+                                <span class="item-price">₹149</span>
+                                <button class="btn add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item" data-category="snacks">
+                        <div class="item-image">
+                            <img src="images/54.webp" alt="Chicken Nuggets">
+                        </div>
+                        <div class="item-details">
+                            <h3>Chicken Nuggets</h3>
+                            <p class="item-desc">8 pieces of crispy chicken nuggets</p>
+                            <div class="item-footer">
+                                <script src="menu.js"></script>
+                                <script src="cart.js"></script>
+                            </body>
+                            </html>
+
+                               

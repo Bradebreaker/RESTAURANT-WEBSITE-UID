@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - CRISPY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser/dist/email.min.js"></script>
+    <script>
+        emailjs.init('4jmmRnUDPf27apTBG'); // paste your real Public Key here
+      </script>
+>
+
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header>
+        <!-- Copy header from index.html -->
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <h1>Your Cart</h1>
+            <div class="cart-items">
+                <!-- Cart items will be added dynamically -->
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-basket"></i>
+                    <h3>Your cart is empty</h3>
+                    <p>Add some delicious items from our menu</p>
+                    <a href="menu.html" class="btn">Browse Menu</a>
+                </div>
+            </div>
+            
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">₹0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (5%)</span>
+                        <span id="tax">₹0</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="total">₹0</span>
+                    </div>
+                </div>
+                <button class="btn checkout-btn" disabled>Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <!-- Copy footer from index.html -->
+    </footer>
+
+<!-- Proceed to Checkout Button -->
+<button id="checkoutBtn" class="btn">Proceed to Checkout</button>
+
+<!-- Hidden Checkout Popup -->
+<div id="checkoutPopup" style="display:none; position:fixed; top:20%; left:30%; background:white; padding:20px; border-radius:10px; box-shadow:0 0 10px #ccc;">
+  <h2>Order Successful!</h2>
+  <p>Please enter your Email and Mobile Number:</p>
+  <input type="email" id="emailInput" placeholder="Email Address" style="margin-bottom:10px; width:100%; padding:10px;"><br>
+  <input type="tel" id="phoneInput" placeholder="Mobile Number" style="margin-bottom:10px; width:100%; padding:10px;"><br>
+  <button id="submitBtn" class="btn">Send Receipt</button>
+</div>
+
+    <script src="cart.js"></script>
+    <!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser/dist/email.min.js"></script>
+<script>
+  emailjs.init('4jmmRnUDPf27apTBG'); // your Public Key
+</script>
+
+<!-- Checkout Button -->
+<button id="checkoutBtn" class="btn">Proceed to Checkout</button>
+
+<!-- Checkout Pop-up -->
+<div id="checkoutPopup" style="display:none; position:fixed; top:20%; left:30%; background:white; padding:20px; border-radius:10px; box-shadow:0 0 10px #ccc;">
+  <h2>Order Successful!</h2>
+  <p>Please enter your Email Address:</p>
+  <input type="email" id="emailInput" placeholder="Enter your email" style="margin-bottom:10px; width:100%; padding:10px;"><br>
+  <button id="submitBtn" class="btn">Send Receipt</button>
+</div>
+
+<script>
+// Open the popup
+document.getElementById('checkoutBtn').onclick = () => {
+  document.getElementById('checkoutPopup').style.display = 'block';
+};
+
+// Handle receipt sending
+document.getElementById('submitBtn').onclick = () => {
+  const userEmail = document.getElementById('emailInput').value;
+
+  if (!userEmail) {
+    alert('Please enter your email!');
+    return;
+  }
+
+  // Send Email using EmailJS
+  emailjs.send('service_0tae3jk', 'template_2e7fwo8', {
+    email: userEmail // IMPORTANT: match your template field ({{email}})
+  })
+  .then((response) => {
+    console.log('SUCCESS!', response.status, response.text);
+    alert('Receipt sent successfully to your email!');
+    document.getElementById('checkoutPopup').style.display = 'none'; // Hide popup
+  })
+  .catch((error) => {
+    console.log('FAILED...', error);
+    alert('Failed to send receipt. Please try again.');
+  });
+};
+</script>
+
+</body>
+</html>

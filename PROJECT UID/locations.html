@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations - CRISPY Fried Chicken</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="locations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Leaflet CSS for maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Header/Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">CRISPY</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="locations.html" class="active">Locations</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-basket"></i> <span id="cart-count">0</span></a>
+                <button class="btn order-btn">Order Now</button>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Locations Hero Section -->
+    <section class="locations-hero">
+        <div class="locations-hero-content">
+            <h1 class="animate__animated animate__fadeInDown">Our Locations</h1>
+            <p class="animate__animated animate__fadeInUp animate__delay-1s">Find a CRISPY restaurant near you</p>
+        </div>
+    </section>
+
+    <!-- Locations Grid -->
+    <section class="locations-container">
+        <div class="container">
+            <h2 class="section-title">CRISPY Restaurants in Tuticorin</h2>
+            <div class="locations-grid">
+                <!-- Location 1 -->
+                <div class="location-card">
+                    <div class="location-badge">Open Now</div>
+                    <div class="location-image">
+                        <img src="images/003.jpeg" alt="CRISPY VOC College Location">
+                    </div>
+                    <div class="location-details">
+                        <h3>CRISPY VOC College</h3>
+                        <p class="location-address">
+                            <i class="fas fa-map-marker-alt"></i> 12/1, Beach Road, Near VOC College,<br>
+                            Tuticorin - 628008, Tamil Nadu
+                        </p>
+                        <div class="location-hours">
+                            <p class="hours-title">Opening Hours:</p>
+                            <ul class="hours-list">
+                                <li><span>Monday - Thursday</span> <span>10:00 AM - 10:00 PM</span></li>
+                                <li><span>Friday - Sunday</span> <span>10:00 AM - 11:00 PM</span></li>
+                            </ul>
+                        </div>
+                        <div class="location-actions">
+                            <a href="tel:+919876543210" class="btn order-btn">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location 2 -->
+                <div class="location-card">
+                    <div class="location-badge">Open Now</div>
+                    <div class="location-image">
+                        <img src="images/002.jpeg" alt="CRISPY Tuticorin Central">
+                    </div>
+                    <div class="location-details">
+                        <h3>CRISPY Tuticorin Central</h3>
+                        <p class="location-address">
+                            <i class="fas fa-map-marker-alt"></i> 45, Main Bazaar Road,<br>
+                            Near Bus Stand, Tuticorin - 628001, Tamil Nadu
+                        </p>
+                        <div class="location-hours">
+                            <p class="hours-title">Opening Hours:</p>
+                            <ul class="hours-list">
+                                <li><span>Monday - Sunday</span> <span>10:00 AM - 11:00 PM</span></li>
+                            </ul>
+                        </div>
+                        <div class="location-actions">
+                            <a href="tel:+919876543211" class="btn order-btn">
+                                <i class="fas fa-phone"></i> Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location 3 -->
+                <div class="location-card">
+                    <div class="location-badge">Coming Soon</div>
+                    <div class="location-image">
+                        <img src="images/004.jpeg" alt="CRISPY Pearl City Mall">
+                    </div>
+                    <div class="location-details">
+                        <h3>CRISPY Pearl City Mall</h3>
+                        <p class="location-address">
+                            <i class="fas fa-map-marker-alt"></i> Pearl City Mall, 3rd Floor,<br>
+                            Harbour Road, Tuticorin - 628004, Tamil Nadu
+                        </p>
+                        <div class="location-hours">
+                            <p class="hours-title">Opening Soon</p>
+                            <ul class="hours-list">
+                                <li><span>Expected Opening</span> <span>December 2025</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Find Us on Map</h2>
+            <div class="map-container" id="map"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>CRISPY</h3>
+                <p>The best fried chicken in town since 2023</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                <p><i class="fas fa-envelope"></i> info@crispy.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CRISPY Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS for maps -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="main.js"></script>
+    <script src="locations.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
